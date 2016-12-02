@@ -9,3 +9,7 @@ Este repositorio ha sido creado con [Create React App](https://github.com/facebo
 5. Resuelve el reto verificando que todas las pruebas pasen.
 6. Haz commit y luego push a tu fork.
 7. Ingresa tu fork en la plataforma de Make it Real.
+
+
+
+

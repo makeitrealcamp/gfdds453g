@@ -42,7 +42,7 @@ it('creates a new task with the correct text', () => {
 
 it('the text input value is reset after creating task', () => {
   const wrapper = mount(<App />);
-  const newTask = wrapper.find('#new-task');
+  let newTask = wrapper.find('#new-task');
   newTask.node.value = 'Hola';
   newTask.simulate('change', {target: {value: 'Hola'}})
   wrapper.find('form').simulate('submit', newTask)
@@ -50,21 +50,18 @@ it('the text input value is reset after creating task', () => {
 })
 
 it('adds error class to input field when creating a blank task', () => {
-  const wrapper = mount(<App />)
+  const wrapper = shallow(<App />)
   const newTask = wrapper.find('#new-task');
-  wrapper.find('form').simulate('submit')
-  expect(newTask.hasClass('error')).toBe(true)
+  wrapper.find('form').simulate('submit', {preventDefault(){}})
+  expect(wrapper.find('#new-task').hasClass('error')).toBe(true)
 })
 
 
 it('toggles done classs on li when click', () => {
-  const wrapper = mount(<App />);
+  const wrapper = shallow(<App />);
   const task = wrapper.find('li').first()
   task.simulate('click')
-  expect(task.hasClass('done')).toBe(true)
+  expect(wrapper.find('li').first().hasClass('done')).toBe(true)
   task.simulate('click')
-  expect(task.hasClass('done')).toBe(false)
+  expect(wrapper.find('li').first().hasClass('done')).toBe(false)
 })
-
-
-
