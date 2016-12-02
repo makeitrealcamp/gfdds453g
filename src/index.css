@@ -30,6 +30,10 @@ ul li:last-child {
   border-bottom: none;
 }
 
+ul li.done {
+  text-decoration: line-through;
+}
+
 input[type=text] {
   box-sizing: border-box;
   font-size: 16px;
@@ -37,3 +41,8 @@ input[type=text] {
   border: 1px solid #ccc;
   padding: 13px;
 }
+
+.error {
+  border-color: #ff0000 !important;
+}
+
