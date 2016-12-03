@@ -11,7 +11,7 @@ export class App extends Component {
           <Link to='/page1'>Page 1</Link> {/* Este componente viene de React Router*/}
           <Link to='/page2'>Page 2</Link>
         </nav>
-        {/*Falta implementar una linea de codigo justo aca*/}
+        {this.props.children}
       </div>
     )
   }
