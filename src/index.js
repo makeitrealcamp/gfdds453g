@@ -7,18 +7,7 @@ import './index.css';
 
 // Implementa las rutas aca
 
-const routes = (
-  <Router history={hashHistory}>
-    <Route path='/' component={App}>
-      <IndexRedirect to='/page1'/>
-      <Route path='/page1' component={Page1}/>
-      <Route path='/page2' component={Page2}/>
-      <Route path='*' component={NotFound}/>
-    </Route>
-  </Router>
-)
-
 ReactDOM.render(
-  routes,
+  <App />, // Es posible que tengas que hacer un cambio en esta linea.
   document.getElementById('root')
 );
