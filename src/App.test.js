@@ -4,6 +4,7 @@ import { render, shallow, mount } from 'enzyme';
 import {Router, Route, hashHistory, IndexRedirect, createMemoryHistory} from 'react-router'
 import { Simulate } from 'react-addons-test-utils'
 import {App, Page1, Page2, NotFound} from './App';
+import Setup from './Setup';
 
 const { click } = Simulate
 
