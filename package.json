@@ -3,11 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-scripts": "1.0.14",
-    "react-test-renderer": "^16.0.0",
-    "react-router": "^3.0.0"
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -16,7 +15,19 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "enzyme": "^3.1.0",
-    "enzyme-adapter-react-16": "^1.0.1"
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
